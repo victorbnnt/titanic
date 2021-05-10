@@ -5,3 +5,9 @@
 raw_data/
 **/__pycache__/
 .env
+mlruns/
+notebooks/
+tests/
+scripts/
+Makefile
+setup.py
