@@ -19,8 +19,8 @@ import joblib
 
 
 # Update to change parameters to test
-MODEL = model_SVC
-GRID = grid_svc
+MODEL = model_GBC
+GRID = grid_GBC
 
 
 class Trainer():

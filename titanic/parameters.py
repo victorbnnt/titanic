@@ -1,8 +1,10 @@
 # sklearn
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import RobustScaler
 from sklearn.svm import SVC
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import GradientBoostingClassifier
 
 # others
 from scipy import stats
@@ -15,7 +17,7 @@ EXPERIMENT_NAME = f"[FR] [Paris] [{myname}] Titanic"
 
 
 # encoding and scaling parameters
-params = {"imputer_strategy": "median",
+params = {"imputer_strategy": "mean",
           "scaler": StandardScaler()}
 
 
@@ -40,4 +42,15 @@ grid_RFC = {'n_estimators': stats.randint(1, 200),
             # 'degree': stats.randint(2, 3)
             }
 model_RFC = RandomForestClassifier()
+######################################################
+
+######################################################
+# GradientBoostingClassifier model
+######################################################
+grid_GBC = {'loss': ['exponential'],
+            'learning_rate': stats.loguniform(0.01, 1),
+            'n_estimators': stats.randint(1, 200)
+            #'max_depth': stats.randint(1, 100)
+            }
+model_GBC = GradientBoostingClassifier()
 ######################################################
