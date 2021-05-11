@@ -3,12 +3,14 @@ import os
 
 
 train_set = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) + "/raw_data/train.csv"
+test_set = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) + "/raw_data/test.csv"
 
 
 def get_data():
     '''returns training titanic set DataFrames'''
-    df = pd.read_csv(train_set)
-    return df
+    df_train = pd.read_csv(train_set)
+    df_test = pd.read_csv(test_set)
+    return df_train, df_test
 
 
 def clean_data(df):
@@ -24,5 +26,6 @@ def clean_data(df):
 
 
 if __name__ == '__main__':
-    df = get_data()
-    print("Data loaded. Shape:" + str(df.shape))
+    df_train, df_test = get_data()
+    print("Train dataframe loaded. Shape:" + str(df_train.shape))
+    print("Test dataframe loaded. Shape:" + str(df_test.shape))

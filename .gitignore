@@ -11,3 +11,4 @@ tests/
 scripts/
 Makefile
 setup.py
+titanic_prediction.csv

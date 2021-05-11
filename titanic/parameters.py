@@ -5,6 +5,8 @@ from sklearn.preprocessing import RobustScaler
 from sklearn.svm import SVC
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.ensemble import GradientBoostingClassifier
+from sklearn.ensemble import AdaBoostClassifier
+
 
 # others
 from scipy import stats
@@ -53,4 +55,13 @@ grid_GBC = {'loss': ['exponential'],
             #'max_depth': stats.randint(1, 100)
             }
 model_GBC = GradientBoostingClassifier()
+######################################################
+
+######################################################
+# GradientBoostingClassifier model
+######################################################
+grid_ADA = {'n_estimators': stats.randint(1, 200),
+            'learning_rate': stats.loguniform(0.5, 3)
+            }
+model_ADA = AdaBoostClassifier()
 ######################################################

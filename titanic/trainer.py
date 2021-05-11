@@ -1,4 +1,5 @@
 # imports
+import pandas as pd
 from titanic.data import get_data
 from titanic.data import clean_data
 from titanic.parameters import *
@@ -19,8 +20,8 @@ import joblib
 
 
 # Update to change parameters to test
-MODEL = model_GBC
-GRID = grid_GBC
+MODEL = model_ADA
+GRID = grid_ADA
 
 
 class Trainer():
@@ -30,36 +31,50 @@ class Trainer():
             X: pandas DataFrame
             y: pandas Series
         """
-        self.pipeline = None
+        self.model = None
+        self.scaler = None
+        self.X_test = None
         self.X = X
         self.y = y
         self.baseline_accuracy = None
         self.optimized_accuracy = None
         self.experiment_name = EXPERIMENT_NAME
 
-    def encode_and_scale(self, params=params):
+    def encode_and_scale(self, params=params, training_set=True):
         """ encode and scale dataframe """
 
+        if training_set==True:
+            df = self.X.copy()
+        else:
+            df = self.X_test.copy()
+
         # Binary encode Sex feature
-        self.X["Sex"] = self.X["Sex"].apply(lambda x: 1 if x == "male" else 0)
+        df["Sex"] = df["Sex"].apply(lambda x: 1 if x == "male" else 0)
 
         # OneHotEncode Pclass feature
         feat = "Pclass"
         ohe = OneHotEncoder(sparse=False)
-        ohe.fit(self.X[[feat]])
+        ohe.fit(df[[feat]])
         col = list(ohe.get_feature_names([feat]))
-        self.X[col] = ohe.transform(self.X[[feat]])
-        self.X.drop(columns=feat, inplace=True)
+        df[col] = ohe.transform(df[[feat]])
+        df.drop(columns=feat, inplace=True)
 
         # impute for missing values in Age feature
-        self.X["Age"] = SimpleImputer(strategy=params["imputer_strategy"]).fit_transform(self.X[["Age"]])
+        df["Age"] = SimpleImputer(strategy=params["imputer_strategy"]).fit_transform(df[["Age"]])
 
-        # Scaled dataframe
-        self.X = params["scaler"].fit_transform(self.X)
+        # Scale dataframe
+        if training_set==True:
+            self.scaler = params["scaler"].fit(df)
+            self.X = self.scaler.transform(df)
 
-        # ### MLFLOW RECORDS
-        self.mlflow_log_param("Numeric imputer", params["imputer_strategy"])
-        self.mlflow_log_param("Scaler", params["scaler"])
+            # ### MLFLOW RECORDS
+            self.mlflow_log_param("Numeric imputer", params["imputer_strategy"])
+            self.mlflow_log_param("Scaler", params["scaler"])
+        else:
+            df["Fare"] = SimpleImputer(strategy=params["imputer_strategy"]).fit_transform(df[["Fare"]])
+            self.X_test = self.scaler.transform(df)
+
+
 
     def cross_validate_baseline(self, model=model_SVC, cv=20):
         """ compute chosen model baseline accuracy """
@@ -81,20 +96,20 @@ class Trainer():
         """training baseline model"""
 
         """search best parameters and train model"""
-        search = RandomizedSearchCV(model,
-                                    grid,
-                                    scoring='accuracy',
-                                    n_iter=500,
-                                    cv=5,
-                                    n_jobs=-1)
-        search.fit(self.X, self.y)
-        self.optimized_accuracy = round(search.best_score_, 3)
+        self.model = RandomizedSearchCV(model,
+                                        grid,
+                                        scoring='accuracy',
+                                        n_iter=500,
+                                        cv=5,
+                                        n_jobs=-1)
+        self.model.fit(self.X, self.y)
+        self.optimized_accuracy = round(self.model.best_score_, 3)
         print("Tuned " + type(model).__name__ + " model accuracy: " +
               str(self.optimized_accuracy*100) + "%")
 
         # ### MLFLOW RECORDS
         self.mlflow_log_metric("Optimized accuracy", self.optimized_accuracy)
-        for k, v in search.best_params_.items():
+        for k, v in self.model.best_params_.items():
             self.mlflow_log_param(k, v)
 
     @memoized_property
@@ -121,20 +136,39 @@ class Trainer():
 
     def save_model(self):
         """Save the model into a .joblib format"""
-        joblib.dump(self.search.best_estimator_, 'titanic.joblib')
+        joblib.dump(self.model.best_estimator_, 'titanic.joblib')
+
+    def generate_kaggle_submission(self, test_set, export_name="titanic_prediction"):
+        self.X_test = test_set
+        self.X_test = clean_data(self.X_test)
+
+        # Encode and scale
+        self.encode_and_scale(params=params, training_set=False)
+
+        # prediction on test set with optimized model
+        y_pred = self.model.best_estimator_.predict(self.X_test)
+
+        # Format dataframe to be send to kaggle
+        to_send_to_kaggle = pd.concat([test_set[["PassengerId"]],
+                               pd.DataFrame(y_pred)],axis=1).rename(columns={0: "Survived"})
+
+        # Write .csv file to be sent to kaggle competition
+        to_send_to_kaggle.to_csv(export_name + ".csv", index=False)
+
+
 
 
 if __name__ == "__main__":
 
     # get data
-    data = get_data()
+    data_train, data_test = get_data()
 
     # clean data
-    data = clean_data(data)
+    data_train = clean_data(data_train)
 
     # set X and y
-    X = data.drop(["Survived"], axis=1)
-    y = data["Survived"]
+    X = data_train.drop(["Survived"], axis=1)
+    y = data_train["Survived"]
 
     # define trainer
     trainer = Trainer(X, y)
@@ -143,3 +177,6 @@ if __name__ == "__main__":
     # get accuracy
     trainer.cross_validate_baseline(model=MODEL)
     trainer.titanic_train(grid=GRID, model=MODEL)
+
+    # generate kaggle submission file
+    trainer.generate_kaggle_submission(data_test)
