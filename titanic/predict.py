@@ -37,6 +37,13 @@ def prepare_test_data(data_test=None):
 
     return X_test, data_test
 
+
+
+def get_model(model):
+    return joblib.load(os.path.join(PATH_TO_LOCAL_MODEL, model + ".joblib"))
+
+
+
 def generate_submission_csv(model="model", export_name="titanic_prediction"):
     """ Generate csv file to be sent to Kaggle """
 
@@ -45,7 +52,7 @@ def generate_submission_csv(model="model", export_name="titanic_prediction"):
 
     # load model
     try:
-        trained_model = joblib.load(os.path.join(PATH_TO_LOCAL_MODEL, model + ".joblib"))
+        trained_model = get_model(model)
     except:
         print("Model named " + model + " not found in models/ folder. Please train a model first.")
         return

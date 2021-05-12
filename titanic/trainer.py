@@ -56,12 +56,13 @@ class Trainer():
         df["Sex"] = df["Sex"].apply(lambda x: 1 if x == "male" else 0)
 
         # OneHotEncode Pclass feature
-        feat = "Pclass"
-        ohe = OneHotEncoder(sparse=False)
-        ohe.fit(df[[feat]])
-        col = list(ohe.get_feature_names([feat]))
-        df[col] = ohe.transform(df[[feat]])
-        df.drop(columns=feat, inplace=True)
+        if df.shape[0]!=1:
+            feat = "Pclass"
+            ohe = OneHotEncoder(sparse=False)
+            ohe.fit(df[[feat]])
+            col = list(ohe.get_feature_names([feat]))
+            df[col] = ohe.transform(df[[feat]])
+            df.drop(columns=feat, inplace=True)
 
         # impute for missing values in Age feature
         df["Age"] = SimpleImputer(strategy=self.params["imputer_strategy"]).fit_transform(df[["Age"]])
