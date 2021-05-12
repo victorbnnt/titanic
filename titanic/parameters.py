@@ -6,6 +6,7 @@ from sklearn.svm import SVC
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.ensemble import AdaBoostClassifier
+from sklearn.linear_model import RidgeClassifier
 
 
 # others
@@ -64,4 +65,16 @@ grid_ADA = {'n_estimators': stats.randint(1, 200),
             'learning_rate': stats.loguniform(0.5, 3)
             }
 model_ADA = AdaBoostClassifier()
+######################################################
+
+######################################################
+# Ridge classifier model
+######################################################
+grid_RIDGE = {'alpha': stats.loguniform(0.5, 3),
+              'normalize': [True, False],
+              'copy_X': [True, False],
+              'tol': stats.loguniform(0.01, 1),
+              'solver': ['svd', 'cholesky', 'lsqr', 'sparse_cg', 'sag', 'saga']
+              }
+model_RIDGE = RidgeClassifier()
 ######################################################

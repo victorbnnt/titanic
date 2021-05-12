@@ -1,5 +1,8 @@
 # imports
 import pandas as pd
+import argparse
+import subprocess
+from termcolor import colored
 from titanic.data import get_data
 from titanic.data import clean_data
 from titanic.parameters import *
@@ -20,13 +23,13 @@ import joblib
 
 
 # Update to change parameters to test
-MODEL = model_ADA
-GRID = grid_ADA
+MODEL = model_GBC
+GRID = grid_GBC
 
 
 class Trainer():
 
-    def __init__(self, X, y):
+    def __init__(self, X, y, params=params):
         """
             X: pandas DataFrame
             y: pandas Series
@@ -34,19 +37,20 @@ class Trainer():
         self.model = None
         self.scaler = None
         self.X_test = None
+        self.params = params
         self.X = X
         self.y = y
         self.baseline_accuracy = None
         self.optimized_accuracy = None
         self.experiment_name = EXPERIMENT_NAME
 
-    def encode_and_scale(self, params=params, training_set=True):
+    def encode_and_scale(self, X_test=None):
         """ encode and scale dataframe """
 
-        if training_set==True:
+        if X_test is None:
             df = self.X.copy()
         else:
-            df = self.X_test.copy()
+            df = X_test.copy()
 
         # Binary encode Sex feature
         df["Sex"] = df["Sex"].apply(lambda x: 1 if x == "male" else 0)
@@ -60,19 +64,19 @@ class Trainer():
         df.drop(columns=feat, inplace=True)
 
         # impute for missing values in Age feature
-        df["Age"] = SimpleImputer(strategy=params["imputer_strategy"]).fit_transform(df[["Age"]])
+        df["Age"] = SimpleImputer(strategy=self.params["imputer_strategy"]).fit_transform(df[["Age"]])
 
         # Scale dataframe
-        if training_set==True:
-            self.scaler = params["scaler"].fit(df)
+        if X_test is None:
+            self.scaler = self.params["scaler"].fit(df)
             self.X = self.scaler.transform(df)
 
             # ### MLFLOW RECORDS
-            self.mlflow_log_param("Numeric imputer", params["imputer_strategy"])
-            self.mlflow_log_param("Scaler", params["scaler"])
+            self.mlflow_log_param("Numeric imputer", self.params["imputer_strategy"])
+            self.mlflow_log_param("Scaler", self.params["scaler"])
         else:
-            df["Fare"] = SimpleImputer(strategy=params["imputer_strategy"]).fit_transform(df[["Fare"]])
-            self.X_test = self.scaler.transform(df)
+            df["Fare"] = SimpleImputer(strategy=self.params["imputer_strategy"]).fit_transform(df[["Fare"]])
+            return self.scaler.transform(df)
 
 
 
@@ -92,6 +96,8 @@ class Trainer():
         self.mlflow_log_metric("Baseline accuracy", self.baseline_accuracy)
         self.mlflow_log_param("Model", type(model).__name__)
 
+
+
     def titanic_train(self, grid=grid_svc, model=model_SVC):
         """training baseline model"""
 
@@ -105,12 +111,14 @@ class Trainer():
         self.model.fit(self.X, self.y)
         self.optimized_accuracy = round(self.model.best_score_, 3)
         print("Tuned " + type(model).__name__ + " model accuracy: " +
-              str(self.optimized_accuracy*100) + "%")
+              str(round(self.optimized_accuracy*100, 3)) + "%")
 
         # ### MLFLOW RECORDS
         self.mlflow_log_metric("Optimized accuracy", self.optimized_accuracy)
         for k, v in self.model.best_params_.items():
             self.mlflow_log_param(k, v)
+
+
 
     @memoized_property
     def mlflow_client(self):
@@ -134,31 +142,24 @@ class Trainer():
     def mlflow_log_metric(self, key, value):
         self.mlflow_client.log_metric(self.mlflow_run.info.run_id, key, value)
 
-    def save_model(self):
-        """Save the model into a .joblib format"""
-        joblib.dump(self.model.best_estimator_, 'titanic.joblib')
-
-    def generate_kaggle_submission(self, test_set, export_name="titanic_prediction"):
-        self.X_test = test_set
-        self.X_test = clean_data(self.X_test)
-
-        # Encode and scale
-        self.encode_and_scale(params=params, training_set=False)
-
-        # prediction on test set with optimized model
-        y_pred = self.model.best_estimator_.predict(self.X_test)
-
-        # Format dataframe to be send to kaggle
-        to_send_to_kaggle = pd.concat([test_set[["PassengerId"]],
-                               pd.DataFrame(y_pred)],axis=1).rename(columns={0: "Survived"})
-
-        # Write .csv file to be sent to kaggle competition
-        to_send_to_kaggle.to_csv(export_name + ".csv", index=False)
 
 
+    def save_model(self, model_name):
+        """ Save the model into a .joblib format """
+        joblib.dump(self.model.best_estimator_, model_name + ".joblib")
+        print(colored("Trained model saved locally under " + model_name + ".joblib", "green"))
 
+
+# terminal parameter definition
+parser = argparse.ArgumentParser(description='Titanic trainer')
+parser.add_argument('-m', action="store",
+                          dest="modelname",
+                          help='.joblib model name - default: model',
+                          default="model")
 
 if __name__ == "__main__":
+    # getting optionnal arguments otherwise default
+    results = parser.parse_args()
 
     # get data
     data_train, data_test = get_data()
@@ -178,5 +179,8 @@ if __name__ == "__main__":
     trainer.cross_validate_baseline(model=MODEL)
     trainer.titanic_train(grid=GRID, model=MODEL)
 
-    # generate kaggle submission file
-    trainer.generate_kaggle_submission(data_test)
+    # saving trained model and moving it to models folder
+    trainer.save_model(model_name=results.modelname)
+    subprocess.run(["mv", results.modelname + ".joblib", "models"])
+
+
