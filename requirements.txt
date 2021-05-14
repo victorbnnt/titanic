@@ -31,4 +31,3 @@ termcolor
 # others
 streamlit
 requests
-os
