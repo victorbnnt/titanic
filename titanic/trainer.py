@@ -1,5 +1,4 @@
 # imports
-import pandas as pd
 import argparse
 import subprocess
 from termcolor import colored
@@ -7,11 +6,16 @@ from titanic.data import get_data
 from titanic.data import clean_data
 from titanic.parameters import *
 
+# pipelines
+from sklearn.pipeline import Pipeline
+from sklearn.compose import ColumnTransformer
+
 # sklearn
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.impute import SimpleImputer
 from sklearn.model_selection import RandomizedSearchCV
 from sklearn.model_selection import cross_validate
+from sklearn.preprocessing import StandardScaler
 
 # mlflow
 from memoized_property import memoized_property
@@ -23,8 +27,7 @@ import joblib
 
 
 # Update to change parameters to test
-MODEL = model_GBC
-GRID = grid_GBC
+params = params_GBC
 
 
 class Trainer():
@@ -34,8 +37,8 @@ class Trainer():
             X: pandas DataFrame
             y: pandas Series
         """
+        self.pipeline = None
         self.model = None
-        self.scaler = None
         self.X_test = None
         self.params = params
         self.X = X
@@ -44,75 +47,85 @@ class Trainer():
         self.optimized_accuracy = None
         self.experiment_name = EXPERIMENT_NAME
 
-    def encode_and_scale(self, X_test=None):
-        """ encode and scale dataframe """
 
-        if X_test is None:
-            df = self.X.copy()
-        else:
-            df = X_test.copy()
+    def set_pipeline(self):
+        """ setting pipelines """
 
-        # Binary encode Sex feature
-        df["Sex"] = df["Sex"].apply(lambda x: 1 if x == "male" else 0)
+        # pipeline for numeric features
+        pipe_numeric = Pipeline([
+            ('imputer', SimpleImputer())
+        ])
 
-        # OneHotEncode Pclass feature
-        if df.shape[0]!=1:
-            feat = "Pclass"
-            ohe = OneHotEncoder(sparse=False)
-            ohe.fit(df[[feat]])
-            col = list(ohe.get_feature_names([feat]))
-            df[col] = ohe.transform(df[[feat]])
-            df.drop(columns=feat, inplace=True)
+        # pipeline for multiclass features
+        pipe_multiclass = Pipeline([
+            ('imputer', SimpleImputer(strategy='most_frequent')),
+            ('encoder', OneHotEncoder(sparse=False))
+        ])
 
-        # impute for missing values in Age feature
-        df["Age"] = SimpleImputer(strategy=self.params["imputer_strategy"]).fit_transform(df[["Age"]])
+        # pipeline for binary features
+        pipe_binary = Pipeline([
+            ('encoder', OneHotEncoder(sparse=False, drop='if_binary'))
+        ])
 
-        # Scale dataframe
-        if X_test is None:
-            self.scaler = self.params["scaler"].fit(df)
-            self.X = self.scaler.transform(df)
+        # scaling pipeline
+        scaler = Pipeline([
+            ('scaler', StandardScaler())
+        ])
 
-            # ### MLFLOW RECORDS
-            self.mlflow_log_param("Numeric imputer", self.params["imputer_strategy"])
-            self.mlflow_log_param("Scaler", self.params["scaler"])
-        else:
-            df["Fare"] = SimpleImputer(strategy=self.params["imputer_strategy"]).fit_transform(df[["Fare"]])
-            return self.scaler.transform(df)
+        # combining encoder pipelines
+        encoder = ColumnTransformer([
+            ('binary', pipe_binary, ["Sex"]),
+            ('numeric', pipe_numeric, ["Age", "Fare"]),
+            ('textual', pipe_multiclass, ["Pclass"])
+        ])
+
+        # full preprocessor pipeline
+        preprocessor = Pipeline([("encoder", encoder),
+                                 ("scaler", scaler)])
+        # Setting full pipeline
+        self.pipeline = Pipeline([
+                                  ("preprocessor", preprocessor),
+                                  ('model', self.params["model"])
+                                 ])
 
 
+    def cross_validate_baseline(self, cv=20):
+        """ compute model baseline accuracy """
 
-    def cross_validate_baseline(self, model=model_SVC, cv=20):
-        """ compute chosen model baseline accuracy """
-
-        baseline = cross_validate(model,
+        baseline = cross_validate(self.pipeline,
                                   self.X,
                                   self.y,
                                   scoring="accuracy",
                                   cv=cv)
         self.baseline_accuracy = round(baseline["test_score"].mean(), 3)
-        print("Baseline " + type(model).__name__ + " model accuracy: " +
+        print("Baseline " + type(self.params["model"]).__name__ + " model accuracy: " +
               str(self.baseline_accuracy*100) + "%")
 
         # ### MLFLOW RECORDS
         self.mlflow_log_metric("Baseline accuracy", self.baseline_accuracy)
-        self.mlflow_log_param("Model", type(model).__name__)
+        self.mlflow_log_param("Model", type(self.params["model"]).__name__)
 
 
 
-    def titanic_train(self, grid=grid_svc, model=model_SVC):
-        """training baseline model"""
+    def run(self):
+        """ looking for best parameters for the model and training """
 
-        """search best parameters and train model"""
-        self.model = RandomizedSearchCV(model,
-                                        grid,
+        self.model = RandomizedSearchCV(self.pipeline,
+                                        self.params["random_grid_search"],
                                         scoring='accuracy',
                                         n_iter=500,
                                         cv=5,
                                         n_jobs=-1)
         self.model.fit(self.X, self.y)
         self.optimized_accuracy = round(self.model.best_score_, 3)
-        print("Tuned " + type(model).__name__ + " model accuracy: " +
+        print("Tuned " + type(self.params["model"]).__name__ + " model best accuracy: " +
               str(round(self.optimized_accuracy*100, 3)) + "%")
+
+        # ### PRINT BEST PARAMETERS
+        print("\n####################################\nBest parameters:")
+        for k, v in self.model.best_params_.items():
+            print(k, colored(v, "green"))
+        print("####################################\n")
 
         # ### MLFLOW RECORDS
         self.mlflow_log_metric("Optimized accuracy", self.optimized_accuracy)
@@ -147,16 +160,17 @@ class Trainer():
 
     def save_model(self, model_name):
         """ Save the model into a .joblib format """
-        joblib.dump(self.model.best_estimator_, model_name + ".joblib")
+        joblib.dump(self.model, model_name + ".joblib")
         print(colored("Trained model saved locally under " + model_name + ".joblib", "green"))
+
 
 
 # terminal parameter definition
 parser = argparse.ArgumentParser(description='Titanic trainer')
 parser.add_argument('-m', action="store",
-                          dest="modelname",
-                          help='.joblib model name - default: model',
-                          default="model")
+                    dest="modelname",
+                    help='.joblib model name - default: model',
+                    default="model")
 
 if __name__ == "__main__":
     # getting optionnal arguments otherwise default
@@ -174,14 +188,12 @@ if __name__ == "__main__":
 
     # define trainer
     trainer = Trainer(X, y)
-    trainer.encode_and_scale()
+    trainer.set_pipeline()
 
-    # get accuracy
-    trainer.cross_validate_baseline(model=MODEL)
-    trainer.titanic_train(grid=GRID, model=MODEL)
+    # get best accuracy
+    trainer.cross_validate_baseline()
+    trainer.run()
 
     # saving trained model and moving it to models folder
     trainer.save_model(model_name=results.modelname)
     subprocess.run(["mv", results.modelname + ".joblib", "models"])
-
-

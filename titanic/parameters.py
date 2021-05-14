@@ -19,62 +19,74 @@ myname = "VictorBnnt"
 EXPERIMENT_NAME = f"[FR] [Paris] [{myname}] Titanic"
 
 
-# encoding and scaling parameters
-params = {"imputer_strategy": "mean",
-          "scaler": StandardScaler()}
-
-
 # training parameters
 ######################################################
 # SVC model
 ######################################################
-grid_svc = {'kernel': ["rbf", "sigmoid"],#['linear', 'poly', 'rbf', 'sigmoid', 'precomputed'],
-            'C': stats.loguniform(1, 2),
+grid_svc = {'model__kernel': ["rbf", "sigmoid"],#['linear', 'poly', 'rbf', 'sigmoid', 'precomputed'],
+            'model__C': stats.loguniform(1, 2),
             #'gamma': 'auto',
-            'degree': stats.randint(1, 3)}
-model_SVC = SVC()
+            'model__degree': stats.randint(1, 3),
+            "preprocessor__encoder__numeric__imputer__strategy": ["mean", "median"],
+            "preprocessor__scaler__scaler": [StandardScaler(), RobustScaler()]
+            }
+#
+params_SVC = {"random_grid_search": grid_svc,
+              "model": SVC()}
 ######################################################
 
 ######################################################
 # Random Forest Classifier model
 ######################################################
-grid_RFC = {'n_estimators': stats.randint(1, 200),
-            'max_depth': stats.randint(1, 40),
-            'min_samples_split': [2, 4, 6, 8, 10],
-            'criterion': ["gini", "entropy"]
+grid_RFC = {'model__n_estimators': stats.randint(1, 200),
+            'model__max_depth': stats.randint(1, 40),
+            'model__min_samples_split': [2, 4, 6, 8, 10],
+            'model__criterion': ["gini", "entropy"],
+            "preprocessor__encoder__numeric__imputer__strategy": ["mean", "median"],
+            "preprocessor__scaler__scaler": [StandardScaler(), RobustScaler()]
             # 'degree': stats.randint(2, 3)
             }
-model_RFC = RandomForestClassifier()
+params_RFC = {"random_grid_search": grid_RFC,
+              "model": RandomForestClassifier()}
 ######################################################
 
 ######################################################
 # GradientBoostingClassifier model
 ######################################################
-grid_GBC = {'loss': ['exponential'],
-            'learning_rate': stats.loguniform(0.01, 1),
-            'n_estimators': stats.randint(1, 200)
+grid_GBC = {'model__loss': ['exponential'],
+            'model__learning_rate': stats.loguniform(0.01, 1),
+            'model__n_estimators': stats.randint(1, 200),
+            "preprocessor__encoder__numeric__imputer__strategy": ["mean", "median"],
+            "preprocessor__scaler__scaler": [StandardScaler(), RobustScaler()]
             #'max_depth': stats.randint(1, 100)
             }
-model_GBC = GradientBoostingClassifier()
+params_GBC = {"random_grid_search": grid_GBC,
+              "model": GradientBoostingClassifier()}
 ######################################################
 
 ######################################################
 # GradientBoostingClassifier model
 ######################################################
-grid_ADA = {'n_estimators': stats.randint(1, 200),
-            'learning_rate': stats.loguniform(0.5, 3)
+grid_ADA = {'model__n_estimators': stats.randint(1, 200),
+            'model__learning_rate': stats.loguniform(0.5, 3),
+            "preprocessor__encoder__numeric__imputer__strategy": ["mean", "median"],
+            "preprocessor__scaler__scaler": [StandardScaler(), RobustScaler()]
             }
-model_ADA = AdaBoostClassifier()
+params_ADA = {"random_grid_search": grid_ADA,
+              "model": AdaBoostClassifier()}
 ######################################################
 
 ######################################################
 # Ridge classifier model
 ######################################################
-grid_RIDGE = {'alpha': stats.loguniform(0.5, 3),
-              'normalize': [True, False],
-              'copy_X': [True, False],
-              'tol': stats.loguniform(0.01, 1),
-              'solver': ['svd', 'cholesky', 'lsqr', 'sparse_cg', 'sag', 'saga']
+grid_RIDGE = {'model__alpha': stats.loguniform(0.5, 3),
+              'model__normalize': [True, False],
+              'model__copy_X': [True, False],
+              'model__tol': stats.loguniform(0.01, 1),
+              'model__solver': ['svd', 'cholesky', 'lsqr', 'sparse_cg', 'sag', 'saga'],
+              "preprocessor__encoder__numeric__imputer__strategy": ["mean", "median"],
+              "preprocessor__scaler__scaler": [StandardScaler(), RobustScaler()]
               }
-model_RIDGE = RidgeClassifier()
+params_RIDGE = {"random_grid_search": grid_RIDGE,
+                "model": RidgeClassifier()}
 ######################################################
