@@ -10,3 +10,4 @@ notebooks/
 tests/
 scripts/
 setup.py
+Makefile
