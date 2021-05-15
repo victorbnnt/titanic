@@ -46,7 +46,7 @@ TITANIC_CSS = f"""
     margin:auto;
     width:150px;
     flex-wrap: wrap;
-    color:snow;
+    color:#6C7B8B;
     font-size:50pt
 }}
 .recap {{
