@@ -6,6 +6,7 @@ raw_data/
 **/__pycache__/
 .env
 mlruns/
+notebooks/request_api.ipynb
 tests/
 scripts/
 setup.py
