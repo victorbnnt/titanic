@@ -1,0 +1,1578 @@
+INFO:     Started server process [310085]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8902 (Press CTRL+C to quit)
+INFO:     127.0.0.1:49092 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49092 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49102 - "GET /predict HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57636 - "GET /survivor_predict HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:59742 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59742 - "GET /openapi.json HTTP/1.1" 200 OK
+   Pclass Sex  Age  Fare
+0       1   F   13  13.0
+INFO:     127.0.0.1:54212 - "GET /survivor_predict?Sex=F&Age=13&Fare=13&Pclass=1 HTTP/1.1" 500 Internal Server Error
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator RobustScaler from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator OneHotEncoder from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator Pipeline from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator SimpleImputer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator ColumnTransformer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator GradientBoostingClassifier from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator OneHotEncoder from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator Pipeline from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator SimpleImputer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator ColumnTransformer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator RobustScaler from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator DummyClassifier from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator GradientBoostingClassifier from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator RandomizedSearchCV from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:443: UserWarning: X has feature names, but OneHotEncoder was fitted without feature names
+  warnings.warn(
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 428, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/applications.py", line 284, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/cors.py", line 83, in __call__
+    await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/routing.py", line 241, in app
+    raw_response = await run_endpoint_function(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/routing.py", line 169, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/anyio/to_thread.py", line 33, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 877, in run_sync_in_worker_thread
+    return await future
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 807, in run
+    result = context.run(func, *args)
+  File "/home/victorbonnet/workspace/personal-site/01_titanic/api/fast.py", line 32, in survivor_predict
+    y_pred = model.best_estimator_.predict(X_pred).tolist()
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 457, in predict
+    Xt = transform.transform(Xt)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 635, in transform
+    Xt = transform.transform(Xt)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/compose/_column_transformer.py", line 746, in transform
+    Xs = self._fit_transform(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/compose/_column_transformer.py", line 604, in _fit_transform
+    return Parallel(n_jobs=self.n_jobs)(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 901, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 819, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/_parallel_backends.py", line 208, in apply_async
+    result = ImmediateResult(func)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/_parallel_backends.py", line 597, in __init__
+    self.results = batch()
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 288, in __call__
+    return [func(*args, **kwargs)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 288, in <listcomp>
+    return [func(*args, **kwargs)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/utils/fixes.py", line 117, in __call__
+    return self.function(*args, **kwargs)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 853, in _transform_one
+    res = transformer.transform(X)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 635, in transform
+    Xt = transform.transform(Xt)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/preprocessing/_encoders.py", line 882, in transform
+    X_int, X_mask = self._transform(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/preprocessing/_encoders.py", line 160, in _transform
+    raise ValueError(msg)
+ValueError: Found unknown categories ['F'] in column 0 during transform
+   Pclass Sex  Age  Fare
+0       1   F   13  13.0
+INFO:     127.0.0.1:48054 - "GET /survivor_predict?Sex=F&Age=13&Fare=13&Pclass=1 HTTP/1.1" 500 Internal Server Error
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator RobustScaler from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator OneHotEncoder from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator Pipeline from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator SimpleImputer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator ColumnTransformer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator GradientBoostingClassifier from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator OneHotEncoder from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator Pipeline from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator SimpleImputer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator ColumnTransformer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator RobustScaler from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator DummyClassifier from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator GradientBoostingClassifier from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator RandomizedSearchCV from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:443: UserWarning: X has feature names, but OneHotEncoder was fitted without feature names
+  warnings.warn(
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 428, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/applications.py", line 284, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/cors.py", line 83, in __call__
+    await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/routing.py", line 241, in app
+    raw_response = await run_endpoint_function(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/routing.py", line 169, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/anyio/to_thread.py", line 33, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 877, in run_sync_in_worker_thread
+    return await future
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 807, in run
+    result = context.run(func, *args)
+  File "/home/victorbonnet/workspace/personal-site/01_titanic/api/fast.py", line 32, in survivor_predict
+    y_pred = model.best_estimator_.predict(X_pred).tolist()
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 457, in predict
+    Xt = transform.transform(Xt)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 635, in transform
+    Xt = transform.transform(Xt)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/compose/_column_transformer.py", line 746, in transform
+    Xs = self._fit_transform(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/compose/_column_transformer.py", line 604, in _fit_transform
+    return Parallel(n_jobs=self.n_jobs)(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 901, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 819, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/_parallel_backends.py", line 208, in apply_async
+    result = ImmediateResult(func)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/_parallel_backends.py", line 597, in __init__
+    self.results = batch()
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 288, in __call__
+    return [func(*args, **kwargs)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 288, in <listcomp>
+    return [func(*args, **kwargs)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/utils/fixes.py", line 117, in __call__
+    return self.function(*args, **kwargs)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 853, in _transform_one
+    res = transformer.transform(X)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 635, in transform
+    Xt = transform.transform(Xt)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/preprocessing/_encoders.py", line 882, in transform
+    X_int, X_mask = self._transform(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/preprocessing/_encoders.py", line 160, in _transform
+    raise ValueError(msg)
+ValueError: Found unknown categories ['F'] in column 0 during transform
+   Pclass Sex  Age  Fare
+0       1   1   13  13.0
+INFO:     127.0.0.1:48068 - "GET /survivor_predict?Sex=1&Age=13&Fare=13&Pclass=1 HTTP/1.1" 500 Internal Server Error
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator RobustScaler from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator OneHotEncoder from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator Pipeline from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator SimpleImputer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator ColumnTransformer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator GradientBoostingClassifier from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator OneHotEncoder from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator Pipeline from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator SimpleImputer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator ColumnTransformer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator RobustScaler from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator DummyClassifier from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator GradientBoostingClassifier from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator RandomizedSearchCV from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:443: UserWarning: X has feature names, but OneHotEncoder was fitted without feature names
+  warnings.warn(
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 428, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/applications.py", line 284, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/cors.py", line 83, in __call__
+    await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/routing.py", line 241, in app
+    raw_response = await run_endpoint_function(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/routing.py", line 169, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/anyio/to_thread.py", line 33, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 877, in run_sync_in_worker_thread
+    return await future
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 807, in run
+    result = context.run(func, *args)
+  File "/home/victorbonnet/workspace/personal-site/01_titanic/api/fast.py", line 32, in survivor_predict
+    y_pred = model.best_estimator_.predict(X_pred).tolist()
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 457, in predict
+    Xt = transform.transform(Xt)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 635, in transform
+    Xt = transform.transform(Xt)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/compose/_column_transformer.py", line 746, in transform
+    Xs = self._fit_transform(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/compose/_column_transformer.py", line 604, in _fit_transform
+    return Parallel(n_jobs=self.n_jobs)(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 901, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 819, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/_parallel_backends.py", line 208, in apply_async
+    result = ImmediateResult(func)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/_parallel_backends.py", line 597, in __init__
+    self.results = batch()
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 288, in __call__
+    return [func(*args, **kwargs)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 288, in <listcomp>
+    return [func(*args, **kwargs)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/utils/fixes.py", line 117, in __call__
+    return self.function(*args, **kwargs)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 853, in _transform_one
+    res = transformer.transform(X)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 635, in transform
+    Xt = transform.transform(Xt)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/preprocessing/_encoders.py", line 882, in transform
+    X_int, X_mask = self._transform(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/preprocessing/_encoders.py", line 160, in _transform
+    raise ValueError(msg)
+ValueError: Found unknown categories ['1'] in column 0 during transform
+   Pclass   Sex  Age  Fare
+0       1  male   13  13.0
+INFO:     127.0.0.1:49140 - "GET /survivor_predict?Sex=male&Age=13&Fare=13&Pclass=1 HTTP/1.1" 500 Internal Server Error
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator RobustScaler from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator OneHotEncoder from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator Pipeline from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator SimpleImputer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator ColumnTransformer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator GradientBoostingClassifier from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator OneHotEncoder from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator Pipeline from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator SimpleImputer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator ColumnTransformer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator RobustScaler from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator DummyClassifier from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator GradientBoostingClassifier from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator RandomizedSearchCV from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:443: UserWarning: X has feature names, but OneHotEncoder was fitted without feature names
+  warnings.warn(
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 428, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/applications.py", line 284, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/cors.py", line 83, in __call__
+    await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/routing.py", line 241, in app
+    raw_response = await run_endpoint_function(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/routing.py", line 169, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/anyio/to_thread.py", line 33, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 877, in run_sync_in_worker_thread
+    return await future
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 807, in run
+    result = context.run(func, *args)
+  File "/home/victorbonnet/workspace/personal-site/01_titanic/api/fast.py", line 32, in survivor_predict
+    y_pred = model.best_estimator_.predict(X_pred).tolist()
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 457, in predict
+    Xt = transform.transform(Xt)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 635, in transform
+    Xt = transform.transform(Xt)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/compose/_column_transformer.py", line 746, in transform
+    Xs = self._fit_transform(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/compose/_column_transformer.py", line 604, in _fit_transform
+    return Parallel(n_jobs=self.n_jobs)(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 901, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 819, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/_parallel_backends.py", line 208, in apply_async
+    result = ImmediateResult(func)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/_parallel_backends.py", line 597, in __init__
+    self.results = batch()
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 288, in __call__
+    return [func(*args, **kwargs)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 288, in <listcomp>
+    return [func(*args, **kwargs)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/utils/fixes.py", line 117, in __call__
+    return self.function(*args, **kwargs)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 853, in _transform_one
+    res = transformer.transform(X)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 635, in transform
+    Xt = transform.transform(Xt)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/preprocessing/_encoders.py", line 888, in transform
+    self._map_infrequent_categories(X_int, X_mask)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/preprocessing/_encoders.py", line 726, in _map_infrequent_categories
+    if not self._infrequent_enabled:
+AttributeError: 'OneHotEncoder' object has no attribute '_infrequent_enabled'
+   Pclass   Sex  Age  Fare
+0       1  male   13  13.0
+INFO:     127.0.0.1:55334 - "GET /survivor_predict?Sex=male&Age=13&Fare=13&Pclass=1 HTTP/1.1" 500 Internal Server Error
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator RobustScaler from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator OneHotEncoder from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator Pipeline from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator SimpleImputer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator ColumnTransformer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator GradientBoostingClassifier from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator OneHotEncoder from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator Pipeline from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator SimpleImputer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator ColumnTransformer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator RobustScaler from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator DummyClassifier from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator GradientBoostingClassifier from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator RandomizedSearchCV from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:443: UserWarning: X has feature names, but OneHotEncoder was fitted without feature names
+  warnings.warn(
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 428, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/applications.py", line 284, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/cors.py", line 83, in __call__
+    await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/routing.py", line 241, in app
+    raw_response = await run_endpoint_function(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/routing.py", line 169, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/anyio/to_thread.py", line 33, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 877, in run_sync_in_worker_thread
+    return await future
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 807, in run
+    result = context.run(func, *args)
+  File "/home/victorbonnet/workspace/personal-site/01_titanic/api/fast.py", line 32, in survivor_predict
+    y_pred = model.best_estimator_.predict(X_pred).tolist()
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 457, in predict
+    Xt = transform.transform(Xt)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 635, in transform
+    Xt = transform.transform(Xt)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/compose/_column_transformer.py", line 746, in transform
+    Xs = self._fit_transform(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/compose/_column_transformer.py", line 604, in _fit_transform
+    return Parallel(n_jobs=self.n_jobs)(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 901, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 819, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/_parallel_backends.py", line 208, in apply_async
+    result = ImmediateResult(func)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/_parallel_backends.py", line 597, in __init__
+    self.results = batch()
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 288, in __call__
+    return [func(*args, **kwargs)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 288, in <listcomp>
+    return [func(*args, **kwargs)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/utils/fixes.py", line 117, in __call__
+    return self.function(*args, **kwargs)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 853, in _transform_one
+    res = transformer.transform(X)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 635, in transform
+    Xt = transform.transform(Xt)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/preprocessing/_encoders.py", line 888, in transform
+    self._map_infrequent_categories(X_int, X_mask)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/preprocessing/_encoders.py", line 726, in _map_infrequent_categories
+    if not self._infrequent_enabled:
+AttributeError: 'OneHotEncoder' object has no attribute '_infrequent_enabled'
+INFO:     127.0.0.1:60364 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60364 - "GET /openapi.json HTTP/1.1" 200 OK
+   Pclass   Sex  Age  Fare
+0       2  male   18  18.0
+INFO:     127.0.0.1:60378 - "GET /survivor_predict?Sex=male&Age=18&Fare=18&Pclass=2 HTTP/1.1" 500 Internal Server Error
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator RobustScaler from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator OneHotEncoder from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator Pipeline from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator SimpleImputer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator ColumnTransformer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator GradientBoostingClassifier from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator OneHotEncoder from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator Pipeline from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator SimpleImputer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator ColumnTransformer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator RobustScaler from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator DummyClassifier from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator GradientBoostingClassifier from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator RandomizedSearchCV from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:443: UserWarning: X has feature names, but OneHotEncoder was fitted without feature names
+  warnings.warn(
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 428, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/applications.py", line 284, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/cors.py", line 83, in __call__
+    await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/routing.py", line 241, in app
+    raw_response = await run_endpoint_function(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/routing.py", line 169, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/anyio/to_thread.py", line 33, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 877, in run_sync_in_worker_thread
+    return await future
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 807, in run
+    result = context.run(func, *args)
+  File "/home/victorbonnet/workspace/personal-site/01_titanic/api/fast.py", line 32, in survivor_predict
+    y_pred = model.best_estimator_.predict(X_pred).tolist()
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 457, in predict
+    Xt = transform.transform(Xt)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 635, in transform
+    Xt = transform.transform(Xt)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/compose/_column_transformer.py", line 746, in transform
+    Xs = self._fit_transform(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/compose/_column_transformer.py", line 604, in _fit_transform
+    return Parallel(n_jobs=self.n_jobs)(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 901, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 819, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/_parallel_backends.py", line 208, in apply_async
+    result = ImmediateResult(func)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/_parallel_backends.py", line 597, in __init__
+    self.results = batch()
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 288, in __call__
+    return [func(*args, **kwargs)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 288, in <listcomp>
+    return [func(*args, **kwargs)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/utils/fixes.py", line 117, in __call__
+    return self.function(*args, **kwargs)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 853, in _transform_one
+    res = transformer.transform(X)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 635, in transform
+    Xt = transform.transform(Xt)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/preprocessing/_encoders.py", line 888, in transform
+    self._map_infrequent_categories(X_int, X_mask)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/preprocessing/_encoders.py", line 726, in _map_infrequent_categories
+    if not self._infrequent_enabled:
+AttributeError: 'OneHotEncoder' object has no attribute '_infrequent_enabled'
+INFO:     Started server process [313676]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('127.0.0.1', 8902): address already in use
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     127.0.0.1:48370 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48370 - "GET /openapi.json HTTP/1.1" 200 OK
+   Pclass   Sex  Age  Fare
+0       1  male   14  13.0
+INFO:     127.0.0.1:48376 - "GET /survivor_predict?Sex=male&Age=14&Fare=13&Pclass=1 HTTP/1.1" 500 Internal Server Error
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator RobustScaler from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator OneHotEncoder from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator Pipeline from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator SimpleImputer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator ColumnTransformer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator GradientBoostingClassifier from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator OneHotEncoder from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator Pipeline from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator SimpleImputer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator ColumnTransformer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator RobustScaler from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator DummyClassifier from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator GradientBoostingClassifier from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator RandomizedSearchCV from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:443: UserWarning: X has feature names, but OneHotEncoder was fitted without feature names
+  warnings.warn(
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 428, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/applications.py", line 284, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/cors.py", line 83, in __call__
+    await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/routing.py", line 241, in app
+    raw_response = await run_endpoint_function(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/routing.py", line 169, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/anyio/to_thread.py", line 33, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 877, in run_sync_in_worker_thread
+    return await future
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 807, in run
+    result = context.run(func, *args)
+  File "/home/victorbonnet/workspace/personal-site/01_titanic/api/fast.py", line 32, in survivor_predict
+    y_pred = model.best_estimator_.predict(X_pred).tolist()
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 457, in predict
+    Xt = transform.transform(Xt)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 635, in transform
+    Xt = transform.transform(Xt)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/compose/_column_transformer.py", line 746, in transform
+    Xs = self._fit_transform(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/compose/_column_transformer.py", line 604, in _fit_transform
+    return Parallel(n_jobs=self.n_jobs)(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 901, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 819, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/_parallel_backends.py", line 208, in apply_async
+    result = ImmediateResult(func)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/_parallel_backends.py", line 597, in __init__
+    self.results = batch()
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 288, in __call__
+    return [func(*args, **kwargs)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 288, in <listcomp>
+    return [func(*args, **kwargs)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/utils/fixes.py", line 117, in __call__
+    return self.function(*args, **kwargs)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 853, in _transform_one
+    res = transformer.transform(X)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 635, in transform
+    Xt = transform.transform(Xt)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/preprocessing/_encoders.py", line 888, in transform
+    self._map_infrequent_categories(X_int, X_mask)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/preprocessing/_encoders.py", line 726, in _map_infrequent_categories
+    if not self._infrequent_enabled:
+AttributeError: 'OneHotEncoder' object has no attribute '_infrequent_enabled'
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [310085]
+INFO:     Started server process [315032]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8902 (Press CTRL+C to quit)
+INFO:     127.0.0.1:41022 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41022 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41022 - "GET /openapi.json HTTP/1.1" 200 OK
+   Pclass   Sex  Age  Fare
+0       1  male   13  13.0
+INFO:     127.0.0.1:41034 - "GET /survivor_predict?Sex=male&Age=13&Fare=13&Pclass=1 HTTP/1.1" 500 Internal Server Error
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator RobustScaler from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator OneHotEncoder from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator Pipeline from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator SimpleImputer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator ColumnTransformer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator GradientBoostingClassifier from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator OneHotEncoder from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator Pipeline from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator SimpleImputer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator ColumnTransformer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator RobustScaler from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator DummyClassifier from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator GradientBoostingClassifier from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator RandomizedSearchCV from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:443: UserWarning: X has feature names, but OneHotEncoder was fitted without feature names
+  warnings.warn(
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 428, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/applications.py", line 284, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/cors.py", line 83, in __call__
+    await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/routing.py", line 241, in app
+    raw_response = await run_endpoint_function(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/routing.py", line 169, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/anyio/to_thread.py", line 33, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 877, in run_sync_in_worker_thread
+    return await future
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 807, in run
+    result = context.run(func, *args)
+  File "/home/victorbonnet/workspace/personal-site/01_titanic/api/fast.py", line 32, in survivor_predict
+    y_pred = model.best_estimator_.predict(X_pred).tolist()
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 457, in predict
+    Xt = transform.transform(Xt)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 635, in transform
+    Xt = transform.transform(Xt)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/compose/_column_transformer.py", line 746, in transform
+    Xs = self._fit_transform(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/compose/_column_transformer.py", line 604, in _fit_transform
+    return Parallel(n_jobs=self.n_jobs)(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 901, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 819, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/_parallel_backends.py", line 208, in apply_async
+    result = ImmediateResult(func)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/_parallel_backends.py", line 597, in __init__
+    self.results = batch()
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 288, in __call__
+    return [func(*args, **kwargs)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 288, in <listcomp>
+    return [func(*args, **kwargs)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/utils/fixes.py", line 117, in __call__
+    return self.function(*args, **kwargs)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 853, in _transform_one
+    res = transformer.transform(X)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 635, in transform
+    Xt = transform.transform(Xt)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/preprocessing/_encoders.py", line 888, in transform
+    self._map_infrequent_categories(X_int, X_mask)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/preprocessing/_encoders.py", line 726, in _map_infrequent_categories
+    if not self._infrequent_enabled:
+AttributeError: 'OneHotEncoder' object has no attribute '_infrequent_enabled'
+   Pclass   Sex  Age  Fare
+0       1  male   13  13.0
+INFO:     127.0.0.1:33882 - "GET /survivor_predict?Sex=male&Age=13&Fare=13&Pclass=1 HTTP/1.1" 500 Internal Server Error
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator RobustScaler from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator OneHotEncoder from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator Pipeline from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator SimpleImputer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator ColumnTransformer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator GradientBoostingClassifier from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator OneHotEncoder from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator Pipeline from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator SimpleImputer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator ColumnTransformer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator RobustScaler from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator DummyClassifier from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator GradientBoostingClassifier from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator RandomizedSearchCV from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:443: UserWarning: X has feature names, but OneHotEncoder was fitted without feature names
+  warnings.warn(
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 428, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/applications.py", line 284, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/cors.py", line 83, in __call__
+    await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/routing.py", line 241, in app
+    raw_response = await run_endpoint_function(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/routing.py", line 169, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/anyio/to_thread.py", line 33, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 877, in run_sync_in_worker_thread
+    return await future
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 807, in run
+    result = context.run(func, *args)
+  File "/home/victorbonnet/workspace/personal-site/01_titanic/api/fast.py", line 32, in survivor_predict
+    y_pred = model.best_estimator_.predict(X_pred).tolist()
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 457, in predict
+    Xt = transform.transform(Xt)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 635, in transform
+    Xt = transform.transform(Xt)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/compose/_column_transformer.py", line 746, in transform
+    Xs = self._fit_transform(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/compose/_column_transformer.py", line 604, in _fit_transform
+    return Parallel(n_jobs=self.n_jobs)(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 901, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 819, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/_parallel_backends.py", line 208, in apply_async
+    result = ImmediateResult(func)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/_parallel_backends.py", line 597, in __init__
+    self.results = batch()
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 288, in __call__
+    return [func(*args, **kwargs)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 288, in <listcomp>
+    return [func(*args, **kwargs)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/utils/fixes.py", line 117, in __call__
+    return self.function(*args, **kwargs)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 853, in _transform_one
+    res = transformer.transform(X)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 635, in transform
+    Xt = transform.transform(Xt)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/preprocessing/_encoders.py", line 888, in transform
+    self._map_infrequent_categories(X_int, X_mask)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/preprocessing/_encoders.py", line 726, in _map_infrequent_categories
+    if not self._infrequent_enabled:
+AttributeError: 'OneHotEncoder' object has no attribute '_infrequent_enabled'
+   Pclass Sex  Age  Fare
+0       1   1   13  13.0
+INFO:     127.0.0.1:33886 - "GET /survivor_predict?Sex=1&Age=13&Fare=13&Pclass=1 HTTP/1.1" 500 Internal Server Error
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator RobustScaler from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator OneHotEncoder from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator Pipeline from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator SimpleImputer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator ColumnTransformer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator GradientBoostingClassifier from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator OneHotEncoder from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator Pipeline from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator SimpleImputer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator ColumnTransformer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator RobustScaler from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator DummyClassifier from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator GradientBoostingClassifier from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator RandomizedSearchCV from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:443: UserWarning: X has feature names, but OneHotEncoder was fitted without feature names
+  warnings.warn(
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 428, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/applications.py", line 284, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/cors.py", line 83, in __call__
+    await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/routing.py", line 241, in app
+    raw_response = await run_endpoint_function(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/routing.py", line 169, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/anyio/to_thread.py", line 33, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 877, in run_sync_in_worker_thread
+    return await future
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 807, in run
+    result = context.run(func, *args)
+  File "/home/victorbonnet/workspace/personal-site/01_titanic/api/fast.py", line 32, in survivor_predict
+    y_pred = model.best_estimator_.predict(X_pred).tolist()
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 457, in predict
+    Xt = transform.transform(Xt)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 635, in transform
+    Xt = transform.transform(Xt)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/compose/_column_transformer.py", line 746, in transform
+    Xs = self._fit_transform(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/compose/_column_transformer.py", line 604, in _fit_transform
+    return Parallel(n_jobs=self.n_jobs)(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 901, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 819, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/_parallel_backends.py", line 208, in apply_async
+    result = ImmediateResult(func)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/_parallel_backends.py", line 597, in __init__
+    self.results = batch()
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 288, in __call__
+    return [func(*args, **kwargs)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 288, in <listcomp>
+    return [func(*args, **kwargs)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/utils/fixes.py", line 117, in __call__
+    return self.function(*args, **kwargs)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 853, in _transform_one
+    res = transformer.transform(X)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 635, in transform
+    Xt = transform.transform(Xt)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/preprocessing/_encoders.py", line 882, in transform
+    X_int, X_mask = self._transform(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/preprocessing/_encoders.py", line 160, in _transform
+    raise ValueError(msg)
+ValueError: Found unknown categories ['1'] in column 0 during transform
+   Pclass Sex  Age  Fare
+0       1   M   13  13.0
+INFO:     127.0.0.1:40792 - "GET /survivor_predict?Sex=M&Age=13&Fare=13&Pclass=1 HTTP/1.1" 500 Internal Server Error
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator RobustScaler from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator OneHotEncoder from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator Pipeline from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator SimpleImputer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator ColumnTransformer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator GradientBoostingClassifier from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator OneHotEncoder from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator Pipeline from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator SimpleImputer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator ColumnTransformer from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator RobustScaler from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator DummyClassifier from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator GradientBoostingClassifier from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator RandomizedSearchCV from version 0.24.2 when using version 1.1.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/base.py:443: UserWarning: X has feature names, but OneHotEncoder was fitted without feature names
+  warnings.warn(
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 428, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/applications.py", line 284, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/cors.py", line 83, in __call__
+    await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/routing.py", line 241, in app
+    raw_response = await run_endpoint_function(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/fastapi/routing.py", line 169, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/anyio/to_thread.py", line 33, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 877, in run_sync_in_worker_thread
+    return await future
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 807, in run
+    result = context.run(func, *args)
+  File "/home/victorbonnet/workspace/personal-site/01_titanic/api/fast.py", line 32, in survivor_predict
+    y_pred = model.best_estimator_.predict(X_pred).tolist()
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 457, in predict
+    Xt = transform.transform(Xt)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 635, in transform
+    Xt = transform.transform(Xt)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/compose/_column_transformer.py", line 746, in transform
+    Xs = self._fit_transform(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/compose/_column_transformer.py", line 604, in _fit_transform
+    return Parallel(n_jobs=self.n_jobs)(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 901, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 819, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/_parallel_backends.py", line 208, in apply_async
+    result = ImmediateResult(func)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/_parallel_backends.py", line 597, in __init__
+    self.results = batch()
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 288, in __call__
+    return [func(*args, **kwargs)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/joblib/parallel.py", line 288, in <listcomp>
+    return [func(*args, **kwargs)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/utils/fixes.py", line 117, in __call__
+    return self.function(*args, **kwargs)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 853, in _transform_one
+    res = transformer.transform(X)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/pipeline.py", line 635, in transform
+    Xt = transform.transform(Xt)
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/preprocessing/_encoders.py", line 882, in transform
+    X_int, X_mask = self._transform(
+  File "/home/victorbonnet/.pyenv/versions/3.8.10/envs/titanic/lib/python3.8/site-packages/sklearn/preprocessing/_encoders.py", line 160, in _transform
+    raise ValueError(msg)
+ValueError: Found unknown categories ['M'] in column 0 during transform
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [315032]
+/home/victorbonnet/.pyenv/versions/3.8.6/envs/titanic-survivors/lib/python3.8/site-packages/pydantic/_internal/_fields.py:128: UserWarning: Field "model_server_url" has conflict with protected namespace "model_".
+
+You may be able to resolve this warning by setting `model_config['protected_namespaces'] = ()`.
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.6/envs/titanic-survivors/lib/python3.8/site-packages/pydantic/_internal/_config.py:317: UserWarning: Valid config keys have changed in V2:
+* 'schema_extra' has been renamed to 'json_schema_extra'
+  warnings.warn(message, UserWarning)
+INFO:     Started server process [344205]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8902 (Press CTRL+C to quit)
+INFO:     127.0.0.1:46126 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46126 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46140 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46140 - "GET /openapi.json HTTP/1.1" 200 OK
+   Pclass   Sex  Age  Fare
+0       1  male   15   1.0
+[[0.9869242657490762, 0.013075734250923779]]
+INFO:     127.0.0.1:36868 - "GET /survivor_predict?Sex=male&Age=15&Fare=1&Pclass=1 HTTP/1.1" 200 OK
+   Pclass   Sex  Age  Fare
+0       1  male   15   1.0
+[[0.9869242657490762, 0.013075734250923779]]
+INFO:     127.0.0.1:44500 - "GET /survivor_predict?Sex=male&Age=15&Fare=1&Pclass=1 HTTP/1.1" 200 OK
+   Pclass   Sex  Age  Fare
+0       1  male   20  20.5
+[[0.8523561620120215, 0.1476438379879786]]
+INFO:     127.0.0.1:38512 - "GET /survivor_predict?Sex=male&Age=20&Fare=20.5&Pclass=1 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       1  female   20  20.5
+[[0.01710658704324186, 0.9828934129567581]]
+INFO:     127.0.0.1:38514 - "GET /survivor_predict?Sex=female&Age=20&Fare=20.5&Pclass=1 HTTP/1.1" 200 OK
+2023-10-04 18:40:46.745 
+Warning: the config option 'server.enableCORS=false' is not compatible with 'server.enableXsrfProtection=true'.
+As a result, 'server.enableCORS' is being overridden to 'true'.
+
+More information:
+In order to protect against CSRF attacks, we send a cookie with each request.
+To do so, we must specify allowable origins, which places a restriction on
+cross-origin resource sharing.
+
+If cross origin resource sharing is required, please disable server.enableXsrfProtection.
+            
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://192.168.1.17:8903
+  External URL: http://86.242.204.44:8903
+
+   Pclass   Sex  Age  Fare
+0       1  male   20  20.5
+[[0.8523561620120215, 0.1476438379879786]]
+INFO:     127.0.0.1:52582 - "GET /survivor_predict?Sex=male&Age=20&Fare=20.5&Pclass=1 HTTP/1.1" 200 OK
+   Pclass   Sex  Age  Fare
+0       1  male   20  20.5
+[[0.8523561620120215, 0.1476438379879786]]
+INFO:     127.0.0.1:51276 - "GET /survivor_predict?Sex=male&Age=20&Fare=20.5&Pclass=1 HTTP/1.1" 200 OK
+   Pclass   Sex  Age  Fare
+0       1  male   20  20.5
+[[0.8523561620120215, 0.1476438379879786]]
+INFO:     127.0.0.1:33526 - "GET /survivor_predict?Sex=male&Age=20&Fare=20.5&Pclass=1 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       1  female   20  20.5
+[[0.01710658704324186, 0.9828934129567581]]
+INFO:     127.0.0.1:48560 - "GET /survivor_predict?Sex=female&Age=20&Fare=20.5&Pclass=1 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       3  female   20  20.5
+[[0.5015265720504217, 0.4984734279495783]]
+INFO:     127.0.0.1:48568 - "GET /survivor_predict?Sex=female&Age=20&Fare=20.5&Pclass=3 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       2  female   20  20.5
+[[0.02554756962926996, 0.97445243037073]]
+INFO:     127.0.0.1:48584 - "GET /survivor_predict?Sex=female&Age=20&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       1  female   20  20.5
+[[0.01710658704324186, 0.9828934129567581]]
+INFO:     127.0.0.1:48588 - "GET /survivor_predict?Sex=female&Age=20&Fare=20.5&Pclass=1 HTTP/1.1" 200 OK
+  Stopping...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [344205]
+/home/victorbonnet/.pyenv/versions/3.8.6/envs/titanic-survivors/lib/python3.8/site-packages/pydantic/_internal/_fields.py:128: UserWarning: Field "model_server_url" has conflict with protected namespace "model_".
+
+You may be able to resolve this warning by setting `model_config['protected_namespaces'] = ()`.
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.6/envs/titanic-survivors/lib/python3.8/site-packages/pydantic/_internal/_config.py:317: UserWarning: Valid config keys have changed in V2:
+* 'schema_extra' has been renamed to 'json_schema_extra'
+  warnings.warn(message, UserWarning)
+INFO:     Started server process [348509]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8902 (Press CTRL+C to quit)
+2023-10-04 18:52:12.326 
+Warning: the config option 'server.enableCORS=false' is not compatible with 'server.enableXsrfProtection=true'.
+As a result, 'server.enableCORS' is being overridden to 'true'.
+
+More information:
+In order to protect against CSRF attacks, we send a cookie with each request.
+To do so, we must specify allowable origins, which places a restriction on
+cross-origin resource sharing.
+
+If cross origin resource sharing is required, please disable server.enableXsrfProtection.
+            
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://192.168.1.17:8903
+  External URL: http://86.242.204.44:8903
+
+   Pclass   Sex  Age  Fare
+0       1  male   20  20.5
+[[0.8523561620120215, 0.1476438379879786]]
+INFO:     127.0.0.1:47636 - "GET /survivor_predict?Sex=male&Age=20&Fare=20.5&Pclass=1 HTTP/1.1" 200 OK

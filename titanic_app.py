@@ -18,7 +18,8 @@ gender = st.radio('Select the gender of the passenger', ("male", "female"))
 age = st.number_input('Select age of the passenger', min_value=0, max_value=110, value=20)
 fare = st.number_input('Select the ticket price the passenger paid', min_value=0.0, max_value=515.0, value=20.5)
 
-url = f"https://titanic-n2o267u7cq-ew.a.run.app/survivor_predict?Sex={gender}&Age={age}&Fare={fare}&Pclass={pclass}"
+#url = f"https://titanic-n2o267u7cq-ew.a.run.app/survivor_predict?Sex={gender}&Age={age}&Fare={fare}&Pclass={pclass}"
+url = f"http://localhost:8902/survivor_predict?Sex={gender}&Age={age}&Fare={fare}&Pclass={pclass}"
 
 response = requests.get(url).json()
 
