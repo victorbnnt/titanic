@@ -1576,3 +1576,692 @@ If cross origin resource sharing is required, please disable server.enableXsrfPr
 0       1  male   20  20.5
 [[0.8523561620120215, 0.1476438379879786]]
 INFO:     127.0.0.1:47636 - "GET /survivor_predict?Sex=male&Age=20&Fare=20.5&Pclass=1 HTTP/1.1" 200 OK
+   Pclass   Sex  Age  Fare
+0       1  male   20  20.5
+[[0.8523561620120215, 0.1476438379879786]]
+INFO:     127.0.0.1:39714 - "GET /survivor_predict?Sex=male&Age=20&Fare=20.5&Pclass=1 HTTP/1.1" 200 OK
+   Pclass   Sex  Age  Fare
+0       1  male   20  20.5
+[[0.8523561620120215, 0.1476438379879786]]
+INFO:     127.0.0.1:43996 - "GET /survivor_predict?Sex=male&Age=20&Fare=20.5&Pclass=1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48656 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48656 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+   Pclass   Sex  Age  Fare
+0       1  male   20  20.5
+[[0.8523561620120215, 0.1476438379879786]]
+INFO:     127.0.0.1:44402 - "GET /survivor_predict?Sex=male&Age=20&Fare=20.5&Pclass=1 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       1  female   20  20.5
+[[0.01710658704324186, 0.9828934129567581]]
+INFO:     127.0.0.1:53906 - "GET /survivor_predict?Sex=female&Age=20&Fare=20.5&Pclass=1 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       2  female   20  20.5
+[[0.02554756962926996, 0.97445243037073]]
+INFO:     127.0.0.1:53910 - "GET /survivor_predict?Sex=female&Age=20&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       2  female   19  20.5
+[[0.026770384158334437, 0.9732296158416656]]
+INFO:     127.0.0.1:60150 - "GET /survivor_predict?Sex=female&Age=19&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       2  female   18  20.5
+[[0.026770384158334437, 0.9732296158416656]]
+INFO:     127.0.0.1:60166 - "GET /survivor_predict?Sex=female&Age=18&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       2  female   17  20.5
+[[0.026770384158334437, 0.9732296158416656]]
+INFO:     127.0.0.1:60172 - "GET /survivor_predict?Sex=female&Age=17&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       2  female   16  20.5
+[[0.026770384158334437, 0.9732296158416656]]
+INFO:     127.0.0.1:60174 - "GET /survivor_predict?Sex=female&Age=16&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       2  female   15  20.5
+[[0.022804752119101934, 0.9771952478808981]]
+INFO:     127.0.0.1:60190 - "GET /survivor_predict?Sex=female&Age=15&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       2  female   14  20.5
+[[0.027259585758490745, 0.9727404142415093]]
+INFO:     127.0.0.1:60204 - "GET /survivor_predict?Sex=female&Age=14&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       2  female   13  20.5
+[[0.024557001953539825, 0.9754429980464602]]
+INFO:     127.0.0.1:60216 - "GET /survivor_predict?Sex=female&Age=13&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       2  female   12  20.5
+[[0.017502663162217824, 0.9824973368377822]]
+INFO:     127.0.0.1:34900 - "GET /survivor_predict?Sex=female&Age=12&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       2  female   11  20.5
+[[0.017502663162217824, 0.9824973368377822]]
+INFO:     127.0.0.1:34904 - "GET /survivor_predict?Sex=female&Age=11&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       2  female   10  20.5
+[[0.017502663162217824, 0.9824973368377822]]
+INFO:     127.0.0.1:34918 - "GET /survivor_predict?Sex=female&Age=10&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       2  female    9  20.5
+[[0.017502663162217824, 0.9824973368377822]]
+INFO:     127.0.0.1:34926 - "GET /survivor_predict?Sex=female&Age=9&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       2  female    8  20.5
+[[0.017502663162217824, 0.9824973368377822]]
+INFO:     127.0.0.1:34942 - "GET /survivor_predict?Sex=female&Age=8&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       2  female    7  20.5
+[[0.017502663162217824, 0.9824973368377822]]
+INFO:     127.0.0.1:34958 - "GET /survivor_predict?Sex=female&Age=7&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       2  female    6  20.5
+[[0.007304794861631492, 0.9926952051383685]]
+INFO:     127.0.0.1:34970 - "GET /survivor_predict?Sex=female&Age=6&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       2  female    5  20.5
+[[0.0022209868180305126, 0.9977790131819695]]
+INFO:     127.0.0.1:34972 - "GET /survivor_predict?Sex=female&Age=5&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       2  female    4  20.5
+[[0.0031993209545758683, 0.9968006790454241]]
+INFO:     127.0.0.1:36248 - "GET /survivor_predict?Sex=female&Age=4&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       2  female   14  20.5
+[[0.027259585758490745, 0.9727404142415093]]
+INFO:     127.0.0.1:36254 - "GET /survivor_predict?Sex=female&Age=14&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       2  female   15  20.5
+[[0.022804752119101934, 0.9771952478808981]]
+INFO:     127.0.0.1:36256 - "GET /survivor_predict?Sex=female&Age=15&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       2  female   16  20.5
+[[0.026770384158334437, 0.9732296158416656]]
+INFO:     127.0.0.1:36272 - "GET /survivor_predict?Sex=female&Age=16&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       2  female   17  20.5
+[[0.026770384158334437, 0.9732296158416656]]
+INFO:     127.0.0.1:36274 - "GET /survivor_predict?Sex=female&Age=17&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       2  female   18  20.5
+[[0.026770384158334437, 0.9732296158416656]]
+INFO:     127.0.0.1:36278 - "GET /survivor_predict?Sex=female&Age=18&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       2  female   19  20.5
+[[0.026770384158334437, 0.9732296158416656]]
+INFO:     127.0.0.1:36282 - "GET /survivor_predict?Sex=female&Age=19&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       2  female   20  20.5
+[[0.02554756962926996, 0.97445243037073]]
+INFO:     127.0.0.1:36294 - "GET /survivor_predict?Sex=female&Age=20&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       2  female   21  20.5
+[[0.03816936603525933, 0.9618306339647407]]
+INFO:     127.0.0.1:36304 - "GET /survivor_predict?Sex=female&Age=21&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       2  female   22  20.5
+[[0.03816936603525933, 0.9618306339647407]]
+INFO:     127.0.0.1:60456 - "GET /survivor_predict?Sex=female&Age=22&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       2  female   23  20.5
+[[0.03816936603525933, 0.9618306339647407]]
+INFO:     127.0.0.1:60468 - "GET /survivor_predict?Sex=female&Age=23&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       2  female   24  20.5
+[[0.0749417216843844, 0.9250582783156156]]
+INFO:     127.0.0.1:60478 - "GET /survivor_predict?Sex=female&Age=24&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       2  female   25  20.5
+[[0.08915985638402912, 0.9108401436159709]]
+INFO:     127.0.0.1:60490 - "GET /survivor_predict?Sex=female&Age=25&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       2  female   26  20.5
+[[0.10057764817240822, 0.8994223518275918]]
+INFO:     127.0.0.1:60498 - "GET /survivor_predict?Sex=female&Age=26&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       2  female   27  20.5
+[[0.07510584062449621, 0.9248941593755038]]
+INFO:     127.0.0.1:60506 - "GET /survivor_predict?Sex=female&Age=27&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       2  female   28  20.5
+[[0.0697900163551658, 0.9302099836448342]]
+INFO:     127.0.0.1:60512 - "GET /survivor_predict?Sex=female&Age=28&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       2  female   29  20.5
+[[0.03597038559435872, 0.9640296144056413]]
+INFO:     127.0.0.1:60524 - "GET /survivor_predict?Sex=female&Age=29&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       2  female   30  20.5
+[[0.03597038559435872, 0.9640296144056413]]
+INFO:     127.0.0.1:60528 - "GET /survivor_predict?Sex=female&Age=30&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       2  female   31  20.5
+[[0.02397258161184379, 0.9760274183881562]]
+INFO:     127.0.0.1:40074 - "GET /survivor_predict?Sex=female&Age=31&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       2  female   32  20.5
+[[0.02231807201281255, 0.9776819279871874]]
+INFO:     127.0.0.1:40086 - "GET /survivor_predict?Sex=female&Age=32&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       1  female   32  20.5
+[[0.01670911376698503, 0.983290886233015]]
+INFO:     127.0.0.1:40090 - "GET /survivor_predict?Sex=female&Age=32&Fare=20.5&Pclass=1 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       3  female   32  20.5
+[[0.2904750373828692, 0.7095249626171308]]
+INFO:     127.0.0.1:40094 - "GET /survivor_predict?Sex=female&Age=32&Fare=20.5&Pclass=3 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       3  female   33  20.5
+[[0.2996811583897234, 0.7003188416102766]]
+INFO:     127.0.0.1:42020 - "GET /survivor_predict?Sex=female&Age=33&Fare=20.5&Pclass=3 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       3  female   34  20.5
+[[0.2996811583897234, 0.7003188416102766]]
+INFO:     127.0.0.1:42024 - "GET /survivor_predict?Sex=female&Age=34&Fare=20.5&Pclass=3 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       3  female   35  20.5
+[[0.3324577676821897, 0.6675422323178103]]
+INFO:     127.0.0.1:42026 - "GET /survivor_predict?Sex=female&Age=35&Fare=20.5&Pclass=3 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       3  female   36  20.5
+[[0.33998588925035345, 0.6600141107496466]]
+INFO:     127.0.0.1:42030 - "GET /survivor_predict?Sex=female&Age=36&Fare=20.5&Pclass=3 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       3  female   37  20.5
+[[0.6085544548499959, 0.391445545150004]]
+INFO:     127.0.0.1:42034 - "GET /survivor_predict?Sex=female&Age=37&Fare=20.5&Pclass=3 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       3  female   38  20.5
+[[0.5591718720938474, 0.44082812790615256]]
+INFO:     127.0.0.1:42038 - "GET /survivor_predict?Sex=female&Age=38&Fare=20.5&Pclass=3 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       3  female   39  20.5
+[[0.7196232469156543, 0.28037675308434573]]
+INFO:     127.0.0.1:42044 - "GET /survivor_predict?Sex=female&Age=39&Fare=20.5&Pclass=3 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       3  female   40  20.5
+[[0.7196232469156543, 0.28037675308434573]]
+INFO:     127.0.0.1:42056 - "GET /survivor_predict?Sex=female&Age=40&Fare=20.5&Pclass=3 HTTP/1.1" 200 OK
+   Pclass     Sex  Age   Fare
+0       3  female   40  20.49
+[[0.7196232469156543, 0.28037675308434573]]
+INFO:     127.0.0.1:49162 - "GET /survivor_predict?Sex=female&Age=40&Fare=20.49&Pclass=3 HTTP/1.1" 200 OK
+   Pclass     Sex  Age   Fare
+0       3  female   40  20.48
+[[0.7196232469156543, 0.28037675308434573]]
+INFO:     127.0.0.1:49172 - "GET /survivor_predict?Sex=female&Age=40&Fare=20.479999999999997&Pclass=3 HTTP/1.1" 200 OK
+   Pclass     Sex  Age   Fare
+0       3  female   40  20.47
+[[0.7196232469156543, 0.28037675308434573]]
+INFO:     127.0.0.1:49186 - "GET /survivor_predict?Sex=female&Age=40&Fare=20.469999999999995&Pclass=3 HTTP/1.1" 200 OK
+   Pclass   Sex  Age  Fare
+0       1  male   20  20.5
+[[0.8523561620120215, 0.1476438379879786]]
+INFO:     127.0.0.1:34572 - "GET /survivor_predict?Sex=male&Age=20&Fare=20.5&Pclass=1 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       1  female   20  20.5
+[[0.01710658704324186, 0.9828934129567581]]
+INFO:     127.0.0.1:51758 - "GET /survivor_predict?Sex=female&Age=20&Fare=20.5&Pclass=1 HTTP/1.1" 200 OK
+   Pclass   Sex  Age  Fare
+0       1  male   20  20.5
+[[0.8523561620120215, 0.1476438379879786]]
+INFO:     127.0.0.1:51774 - "GET /survivor_predict?Sex=male&Age=20&Fare=20.5&Pclass=1 HTTP/1.1" 200 OK
+   Pclass   Sex  Age  Fare
+0       1  male   20  20.5
+[[0.8523561620120215, 0.1476438379879786]]
+INFO:     127.0.0.1:43306 - "GET /survivor_predict?Sex=male&Age=20&Fare=20.5&Pclass=1 HTTP/1.1" 200 OK
+   Pclass   Sex  Age  Fare
+0       2  male   20  20.5
+[[0.8870030023218476, 0.11299699767815247]]
+INFO:     127.0.0.1:50620 - "GET /survivor_predict?Sex=male&Age=20&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass   Sex  Age  Fare
+0       3  male   20  20.5
+[[0.9154133835393143, 0.0845866164606857]]
+INFO:     127.0.0.1:50630 - "GET /survivor_predict?Sex=male&Age=20&Fare=20.5&Pclass=3 HTTP/1.1" 200 OK
+   Pclass   Sex  Age  Fare
+0       2  male   20  20.5
+[[0.8870030023218476, 0.11299699767815247]]
+INFO:     127.0.0.1:50636 - "GET /survivor_predict?Sex=male&Age=20&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       2  female   20  20.5
+[[0.02554756962926996, 0.97445243037073]]
+INFO:     127.0.0.1:50646 - "GET /survivor_predict?Sex=female&Age=20&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass   Sex  Age  Fare
+0       2  male   20  20.5
+[[0.8870030023218476, 0.11299699767815247]]
+INFO:     127.0.0.1:54140 - "GET /survivor_predict?Sex=male&Age=20&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+/home/victorbonnet/.pyenv/versions/3.8.6/envs/titanic-survivors/lib/python3.8/site-packages/pydantic/_internal/_fields.py:128: UserWarning: Field "model_server_url" has conflict with protected namespace "model_".
+
+You may be able to resolve this warning by setting `model_config['protected_namespaces'] = ()`.
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.6/envs/titanic-survivors/lib/python3.8/site-packages/pydantic/_internal/_config.py:317: UserWarning: Valid config keys have changed in V2:
+* 'schema_extra' has been renamed to 'json_schema_extra'
+  warnings.warn(message, UserWarning)
+INFO:     Started server process [13930]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8902 (Press CTRL+C to quit)
+2023-10-13 11:10:23.573 
+Warning: the config option 'server.enableCORS=false' is not compatible with 'server.enableXsrfProtection=true'.
+As a result, 'server.enableCORS' is being overridden to 'true'.
+
+More information:
+In order to protect against CSRF attacks, we send a cookie with each request.
+To do so, we must specify allowable origins, which places a restriction on
+cross-origin resource sharing.
+
+If cross origin resource sharing is required, please disable server.enableXsrfProtection.
+            
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://192.168.1.17:8903
+  External URL: http://86.242.204.44:8903
+
+   Pclass   Sex  Age  Fare
+0       1  male   20  20.5
+[[0.8523561620120215, 0.1476438379879786]]
+INFO:     127.0.0.1:44136 - "GET /survivor_predict?Sex=male&Age=20&Fare=20.5&Pclass=1 HTTP/1.1" 200 OK
+   Pclass   Sex  Age  Fare
+0       1  male   20  20.5
+[[0.8523561620120215, 0.1476438379879786]]
+INFO:     127.0.0.1:50160 - "GET /survivor_predict?Sex=male&Age=20&Fare=20.5&Pclass=1 HTTP/1.1" 200 OK
+   Pclass   Sex  Age  Fare
+0       2  male   20  20.5
+[[0.8870030023218476, 0.11299699767815247]]
+INFO:     127.0.0.1:37352 - "GET /survivor_predict?Sex=male&Age=20&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass   Sex  Age  Fare
+0       3  male   20  20.5
+[[0.9154133835393143, 0.0845866164606857]]
+INFO:     127.0.0.1:39084 - "GET /survivor_predict?Sex=male&Age=20&Fare=20.5&Pclass=3 HTTP/1.1" 200 OK
+   Pclass   Sex  Age  Fare
+0       1  male   20  20.5
+[[0.8523561620120215, 0.1476438379879786]]
+INFO:     127.0.0.1:39096 - "GET /survivor_predict?Sex=male&Age=20&Fare=20.5&Pclass=1 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       1  female   20  20.5
+[[0.01710658704324186, 0.9828934129567581]]
+INFO:     127.0.0.1:39112 - "GET /survivor_predict?Sex=female&Age=20&Fare=20.5&Pclass=1 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       1  female   21  20.5
+[[0.025667958303538296, 0.9743320416964617]]
+INFO:     127.0.0.1:51500 - "GET /survivor_predict?Sex=female&Age=21&Fare=20.5&Pclass=1 HTTP/1.1" 200 OK
+   Pclass   Sex  Age  Fare
+0       1  male   20  20.5
+[[0.8523561620120215, 0.1476438379879786]]
+INFO:     127.0.0.1:45526 - "GET /survivor_predict?Sex=male&Age=20&Fare=20.5&Pclass=1 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       1  female   20  20.5
+[[0.01710658704324186, 0.9828934129567581]]
+INFO:     127.0.0.1:55692 - "GET /survivor_predict?Sex=female&Age=20&Fare=20.5&Pclass=1 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       2  female   20  20.5
+[[0.02554756962926996, 0.97445243037073]]
+INFO:     127.0.0.1:55694 - "GET /survivor_predict?Sex=female&Age=20&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass   Sex  Age  Fare
+0       1  male   20  20.5
+[[0.8523561620120215, 0.1476438379879786]]
+INFO:     127.0.0.1:60510 - "GET /survivor_predict?Sex=male&Age=20&Fare=20.5&Pclass=1 HTTP/1.1" 200 OK
+/home/victorbonnet/.pyenv/versions/3.8.6/envs/titanic-survivors/lib/python3.8/site-packages/pydantic/_internal/_fields.py:128: UserWarning: Field "model_server_url" has conflict with protected namespace "model_".
+
+You may be able to resolve this warning by setting `model_config['protected_namespaces'] = ()`.
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.6/envs/titanic-survivors/lib/python3.8/site-packages/pydantic/_internal/_config.py:317: UserWarning: Valid config keys have changed in V2:
+* 'schema_extra' has been renamed to 'json_schema_extra'
+  warnings.warn(message, UserWarning)
+INFO:     Started server process [10323]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8902 (Press CTRL+C to quit)
+2023-10-30 10:02:27.494 
+Warning: the config option 'server.enableCORS=false' is not compatible with 'server.enableXsrfProtection=true'.
+As a result, 'server.enableCORS' is being overridden to 'true'.
+
+More information:
+In order to protect against CSRF attacks, we send a cookie with each request.
+To do so, we must specify allowable origins, which places a restriction on
+cross-origin resource sharing.
+
+If cross origin resource sharing is required, please disable server.enableXsrfProtection.
+            
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://192.168.1.17:8903
+  External URL: http://86.242.204.44:8903
+
+/home/victorbonnet/.pyenv/versions/3.8.6/envs/titanic-survivors/lib/python3.8/site-packages/pydantic/_internal/_fields.py:128: UserWarning: Field "model_server_url" has conflict with protected namespace "model_".
+
+You may be able to resolve this warning by setting `model_config['protected_namespaces'] = ()`.
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.6/envs/titanic-survivors/lib/python3.8/site-packages/pydantic/_internal/_config.py:317: UserWarning: Valid config keys have changed in V2:
+* 'schema_extra' has been renamed to 'json_schema_extra'
+  warnings.warn(message, UserWarning)
+INFO:     Started server process [5599]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8902 (Press CTRL+C to quit)
+2023-10-30 10:50:05.995 
+Warning: the config option 'server.enableCORS=false' is not compatible with 'server.enableXsrfProtection=true'.
+As a result, 'server.enableCORS' is being overridden to 'true'.
+
+More information:
+In order to protect against CSRF attacks, we send a cookie with each request.
+To do so, we must specify allowable origins, which places a restriction on
+cross-origin resource sharing.
+
+If cross origin resource sharing is required, please disable server.enableXsrfProtection.
+            
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://192.168.1.17:8903
+  External URL: http://86.242.204.44:8903
+
+   Pclass   Sex  Age  Fare
+0       1  male   20  20.5
+[[0.8523561620120215, 0.1476438379879786]]
+INFO:     127.0.0.1:51576 - "GET /survivor_predict?Sex=male&Age=20&Fare=20.5&Pclass=1 HTTP/1.1" 200 OK
+   Pclass   Sex  Age  Fare
+0       1  male   20  20.5
+[[0.8523561620120215, 0.1476438379879786]]
+INFO:     127.0.0.1:36194 - "GET /survivor_predict?Sex=male&Age=20&Fare=20.5&Pclass=1 HTTP/1.1" 200 OK
+/home/victorbonnet/.pyenv/versions/3.8.6/envs/titanic-survivors/lib/python3.8/site-packages/pydantic/_internal/_fields.py:128: UserWarning: Field "model_server_url" has conflict with protected namespace "model_".
+
+You may be able to resolve this warning by setting `model_config['protected_namespaces'] = ()`.
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.6/envs/titanic-survivors/lib/python3.8/site-packages/pydantic/_internal/_config.py:317: UserWarning: Valid config keys have changed in V2:
+* 'schema_extra' has been renamed to 'json_schema_extra'
+  warnings.warn(message, UserWarning)
+INFO:     Started server process [5093]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8902 (Press CTRL+C to quit)
+2023-11-16 08:49:04.905 
+Warning: the config option 'server.enableCORS=false' is not compatible with 'server.enableXsrfProtection=true'.
+As a result, 'server.enableCORS' is being overridden to 'true'.
+
+More information:
+In order to protect against CSRF attacks, we send a cookie with each request.
+To do so, we must specify allowable origins, which places a restriction on
+cross-origin resource sharing.
+
+If cross origin resource sharing is required, please disable server.enableXsrfProtection.
+            
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://192.168.1.17:8903
+  External URL: http://86.242.204.44:8903
+
+   Pclass   Sex  Age  Fare
+0       1  male   20  20.5
+[[0.8523561620120215, 0.1476438379879786]]
+INFO:     127.0.0.1:45066 - "GET /survivor_predict?Sex=male&Age=20&Fare=20.5&Pclass=1 HTTP/1.1" 200 OK
+   Pclass   Sex  Age  Fare
+0       1  male   20  20.5
+[[0.8523561620120215, 0.1476438379879786]]
+INFO:     127.0.0.1:50756 - "GET /survivor_predict?Sex=male&Age=20&Fare=20.5&Pclass=1 HTTP/1.1" 200 OK
+   Pclass   Sex  Age  Fare
+0       1  male   20  20.5
+[[0.8523561620120215, 0.1476438379879786]]
+INFO:     127.0.0.1:43818 - "GET /survivor_predict?Sex=male&Age=20&Fare=20.5&Pclass=1 HTTP/1.1" 200 OK
+   Pclass   Sex  Age  Fare
+0       1  male   20  20.5
+[[0.8523561620120215, 0.1476438379879786]]
+INFO:     127.0.0.1:48580 - "GET /survivor_predict?Sex=male&Age=20&Fare=20.5&Pclass=1 HTTP/1.1" 200 OK
+/home/victorbonnet/.pyenv/versions/3.8.6/envs/titanic-survivors/lib/python3.8/site-packages/pydantic/_internal/_fields.py:128: UserWarning: Field "model_server_url" has conflict with protected namespace "model_".
+
+You may be able to resolve this warning by setting `model_config['protected_namespaces'] = ()`.
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.6/envs/titanic-survivors/lib/python3.8/site-packages/pydantic/_internal/_config.py:317: UserWarning: Valid config keys have changed in V2:
+* 'schema_extra' has been renamed to 'json_schema_extra'
+  warnings.warn(message, UserWarning)
+INFO:     Started server process [5188]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8902 (Press CTRL+C to quit)
+2024-02-12 22:21:42.352 
+Warning: the config option 'server.enableCORS=false' is not compatible with 'server.enableXsrfProtection=true'.
+As a result, 'server.enableCORS' is being overridden to 'true'.
+
+More information:
+In order to protect against CSRF attacks, we send a cookie with each request.
+To do so, we must specify allowable origins, which places a restriction on
+cross-origin resource sharing.
+
+If cross origin resource sharing is required, please disable server.enableXsrfProtection.
+            
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://192.168.1.17:8903
+  External URL: http://90.127.247.163:8903
+
+   Pclass   Sex  Age  Fare
+0       1  male   20  20.5
+[[0.8523561620120215, 0.1476438379879786]]
+INFO:     127.0.0.1:45354 - "GET /survivor_predict?Sex=male&Age=20&Fare=20.5&Pclass=1 HTTP/1.1" 200 OK
+   Pclass   Sex  Age  Fare
+0       2  male   20  20.5
+[[0.8870030023218476, 0.11299699767815247]]
+INFO:     127.0.0.1:60570 - "GET /survivor_predict?Sex=male&Age=20&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       2  female   20  20.5
+[[0.02554756962926996, 0.97445243037073]]
+INFO:     127.0.0.1:60586 - "GET /survivor_predict?Sex=female&Age=20&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass   Sex  Age  Fare
+0       1  male   20  20.5
+[[0.8523561620120215, 0.1476438379879786]]
+INFO:     127.0.0.1:36684 - "GET /survivor_predict?Sex=male&Age=20&Fare=20.5&Pclass=1 HTTP/1.1" 200 OK
+   Pclass   Sex  Age  Fare
+0       2  male   20  20.5
+[[0.8870030023218476, 0.11299699767815247]]
+INFO:     127.0.0.1:36690 - "GET /survivor_predict?Sex=male&Age=20&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       2  female   20  20.5
+[[0.02554756962926996, 0.97445243037073]]
+INFO:     127.0.0.1:39234 - "GET /survivor_predict?Sex=female&Age=20&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+   Pclass     Sex  Age  Fare
+0       2  female   14  20.5
+[[0.027259585758490745, 0.9727404142415093]]
+INFO:     127.0.0.1:35274 - "GET /survivor_predict?Sex=female&Age=14&Fare=20.5&Pclass=2 HTTP/1.1" 200 OK
+/home/victorbonnet/.pyenv/versions/3.8.6/envs/titanic-survivors/lib/python3.8/site-packages/pydantic/_internal/_fields.py:128: UserWarning: Field "model_server_url" has conflict with protected namespace "model_".
+
+You may be able to resolve this warning by setting `model_config['protected_namespaces'] = ()`.
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.6/envs/titanic-survivors/lib/python3.8/site-packages/pydantic/_internal/_config.py:317: UserWarning: Valid config keys have changed in V2:
+* 'schema_extra' has been renamed to 'json_schema_extra'
+  warnings.warn(message, UserWarning)
+INFO:     Started server process [14474]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8902 (Press CTRL+C to quit)
+2024-04-14 19:02:41.547 
+Warning: the config option 'server.enableCORS=false' is not compatible with 'server.enableXsrfProtection=true'.
+As a result, 'server.enableCORS' is being overridden to 'true'.
+
+More information:
+In order to protect against CSRF attacks, we send a cookie with each request.
+To do so, we must specify allowable origins, which places a restriction on
+cross-origin resource sharing.
+
+If cross origin resource sharing is required, please disable server.enableXsrfProtection.
+            
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://192.168.1.17:8903
+  External URL: http://90.127.247.163:8903
+
+
+  A new version of Streamlit is available.
+
+  See what's new at https://discuss.streamlit.io/c/announcements
+
+  Enter the following command to upgrade:
+  $ pip install streamlit --upgrade
+
+/home/victorbonnet/.pyenv/versions/3.8.6/envs/titanic-survivors/lib/python3.8/site-packages/pydantic/_internal/_fields.py:128: UserWarning: Field "model_server_url" has conflict with protected namespace "model_".
+
+You may be able to resolve this warning by setting `model_config['protected_namespaces'] = ()`.
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.6/envs/titanic-survivors/lib/python3.8/site-packages/pydantic/_internal/_config.py:317: UserWarning: Valid config keys have changed in V2:
+* 'schema_extra' has been renamed to 'json_schema_extra'
+  warnings.warn(message, UserWarning)
+INFO:     Started server process [5226]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8902 (Press CTRL+C to quit)
+2024-05-13 21:50:23.242 
+Warning: the config option 'server.enableCORS=false' is not compatible with 'server.enableXsrfProtection=true'.
+As a result, 'server.enableCORS' is being overridden to 'true'.
+
+More information:
+In order to protect against CSRF attacks, we send a cookie with each request.
+To do so, we must specify allowable origins, which places a restriction on
+cross-origin resource sharing.
+
+If cross origin resource sharing is required, please disable server.enableXsrfProtection.
+            
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://192.168.1.17:8903
+  External URL: http://90.127.247.163:8903
+
+/home/victorbonnet/.pyenv/versions/3.8.6/envs/titanic-survivors/lib/python3.8/site-packages/pydantic/_internal/_fields.py:128: UserWarning: Field "model_server_url" has conflict with protected namespace "model_".
+
+You may be able to resolve this warning by setting `model_config['protected_namespaces'] = ()`.
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.6/envs/titanic-survivors/lib/python3.8/site-packages/pydantic/_internal/_config.py:317: UserWarning: Valid config keys have changed in V2:
+* 'schema_extra' has been renamed to 'json_schema_extra'
+  warnings.warn(message, UserWarning)
+INFO:     Started server process [6171]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8902 (Press CTRL+C to quit)
+2024-06-15 19:20:33.180 
+Warning: the config option 'server.enableCORS=false' is not compatible with 'server.enableXsrfProtection=true'.
+As a result, 'server.enableCORS' is being overridden to 'true'.
+
+More information:
+In order to protect against CSRF attacks, we send a cookie with each request.
+To do so, we must specify allowable origins, which places a restriction on
+cross-origin resource sharing.
+
+If cross origin resource sharing is required, please disable server.enableXsrfProtection.
+            
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://192.168.1.17:8903
+  External URL: http://86.238.63.68:8903
+
+   Pclass   Sex  Age  Fare
+0       1  male   20  20.5
+[[0.8523561620120215, 0.1476438379879786]]
+INFO:     127.0.0.1:56116 - "GET /survivor_predict?Sex=male&Age=20&Fare=20.5&Pclass=1 HTTP/1.1" 200 OK
+/home/victorbonnet/.pyenv/versions/3.8.6/envs/titanic-survivors/lib/python3.8/site-packages/pydantic/_internal/_fields.py:128: UserWarning: Field "model_server_url" has conflict with protected namespace "model_".
+
+You may be able to resolve this warning by setting `model_config['protected_namespaces'] = ()`.
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.6/envs/titanic-survivors/lib/python3.8/site-packages/pydantic/_internal/_config.py:317: UserWarning: Valid config keys have changed in V2:
+* 'schema_extra' has been renamed to 'json_schema_extra'
+  warnings.warn(message, UserWarning)
+INFO:     Started server process [6463]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8902 (Press CTRL+C to quit)
+2024-07-31 03:57:02.344 
+Warning: the config option 'server.enableCORS=false' is not compatible with 'server.enableXsrfProtection=true'.
+As a result, 'server.enableCORS' is being overridden to 'true'.
+
+More information:
+In order to protect against CSRF attacks, we send a cookie with each request.
+To do so, we must specify allowable origins, which places a restriction on
+cross-origin resource sharing.
+
+If cross origin resource sharing is required, please disable server.enableXsrfProtection.
+            
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://192.168.1.17:8903
+  External URL: http://86.238.63.68:8903
+
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [6463]
+  Stopping...
+/home/victorbonnet/.pyenv/versions/3.8.6/envs/titanic-survivors/lib/python3.8/site-packages/pydantic/_internal/_fields.py:128: UserWarning: Field "model_server_url" has conflict with protected namespace "model_".
+
+You may be able to resolve this warning by setting `model_config['protected_namespaces'] = ()`.
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.6/envs/titanic-survivors/lib/python3.8/site-packages/pydantic/_internal/_config.py:317: UserWarning: Valid config keys have changed in V2:
+* 'schema_extra' has been renamed to 'json_schema_extra'
+  warnings.warn(message, UserWarning)
+INFO:     Started server process [41182]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8902 (Press CTRL+C to quit)
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [41182]
+/home/victorbonnet/.pyenv/versions/3.8.6/envs/titanic-survivors/lib/python3.8/site-packages/pydantic/_internal/_fields.py:128: UserWarning: Field "model_server_url" has conflict with protected namespace "model_".
+
+You may be able to resolve this warning by setting `model_config['protected_namespaces'] = ()`.
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.6/envs/titanic-survivors/lib/python3.8/site-packages/pydantic/_internal/_config.py:317: UserWarning: Valid config keys have changed in V2:
+* 'schema_extra' has been renamed to 'json_schema_extra'
+  warnings.warn(message, UserWarning)
+INFO:     Started server process [43527]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8902 (Press CTRL+C to quit)
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [43527]
+/home/victorbonnet/.pyenv/versions/3.8.6/envs/titanic-survivors/lib/python3.8/site-packages/pydantic/_internal/_fields.py:128: UserWarning: Field "model_server_url" has conflict with protected namespace "model_".
+
+You may be able to resolve this warning by setting `model_config['protected_namespaces'] = ()`.
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.6/envs/titanic-survivors/lib/python3.8/site-packages/pydantic/_internal/_config.py:317: UserWarning: Valid config keys have changed in V2:
+* 'schema_extra' has been renamed to 'json_schema_extra'
+  warnings.warn(message, UserWarning)
+INFO:     Started server process [47595]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8902 (Press CTRL+C to quit)
+/home/victorbonnet/.pyenv/versions/3.8.6/envs/titanic-survivors/lib/python3.8/site-packages/pydantic/_internal/_fields.py:128: UserWarning: Field "model_server_url" has conflict with protected namespace "model_".
+
+You may be able to resolve this warning by setting `model_config['protected_namespaces'] = ()`.
+  warnings.warn(
+/home/victorbonnet/.pyenv/versions/3.8.6/envs/titanic-survivors/lib/python3.8/site-packages/pydantic/_internal/_config.py:317: UserWarning: Valid config keys have changed in V2:
+* 'schema_extra' has been renamed to 'json_schema_extra'
+  warnings.warn(message, UserWarning)
+INFO:     Started server process [51369]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8902 (Press CTRL+C to quit)
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [51369]
+2024-08-06 23:28:18.350 
+Warning: the config option 'server.enableCORS=false' is not compatible with 'server.enableXsrfProtection=true'.
+As a result, 'server.enableCORS' is being overridden to 'true'.
+
+More information:
+In order to protect against CSRF attacks, we send a cookie with each request.
+To do so, we must specify allowable origins, which places a restriction on
+cross-origin resource sharing.
+
+If cross origin resource sharing is required, please disable server.enableXsrfProtection.
+            
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://192.168.1.17:8903
+  External URL: http://86.238.63.68:8903
+
+  Stopping...
